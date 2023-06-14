@@ -8,7 +8,7 @@
 #     o2 e16*16 # this is too fast, probably triplets
 
 
-violin:
+cello:
     (volume 30)
     o4 d1~/f1~/a1~/>d1~ | 
     o4 c1~/f1~/a-1~/>c1~ | 
@@ -19,27 +19,36 @@ violin:
     [o4 d1~/f1~/a1~/>d1~ | 
     o4 c1~/f1~/a-1~/>c1~ |
     o4 c1~/e1~/a1~/>c1~ |
-    o4 c1~/e1~/a1~/>c1~ |]
+    o4 c1~/e1~/a1~/>c1~ |]*3
 
 
 harp:
     (volume 100)
-    o4 d a > d a |
-    o4 c a- > c a- | 
-    o4 c a- > c a- |
-    %solo o4 c a- > c a- |
+    o4 d4~ a4~ > d4~ a4~ |
+    o4 c4~ a-4~ > c4~ a-4~ | 
+    o4 c4~ a-4~ > c4~ a-4~ |
+    %solo o2 f16~ a16~ > c16~ e16~ f16~ a16~ > c16~ e16~ f16~ a16~ > c16~ e16~ f16 r16 r8 | #o4 c a- > c a- |
     (volume 50)
-    [o4 d a >d a | 
-    o4 c a- > c a- |
-    o4 c a- > c a- |
-    o4 c a- > c a- |]
+    [o4 d4~ a4~ >d4~ a4~ | 
+    o4 c4~ a-4~ > c4~ a-4~ |
+    o4 c4~ a-4~ > c4~ a-4~ |
+    o2 f16~ a16~ > c16~ e16~ f16~ a16~ > c16~ e16~ f16~ a16~ > c16~ e16~ f16 r16 r8|]*3
 
 
-midi-electric-guitar-jazz:
+electric-guitar-clean:
     @solo 
     (volume 100)
     o5 r2 r4 r16 c16 d16 e16 |
     o5 c4~16 c16~ d16~ e16~ c8 < b8 > r16 c16~ d16~ e16~ |
     o5 c8 c16 c16~16 c16 d16~ e16 c8 < b8 > c16 < b16 a16 b16 |
     o4 a4 f4 c8 < a8 e4 |
-    o2 f16~ a16~ > c16~ e16~ f16~ a16~ > c16~ e16~ f16~ a16~ > c16~ e16~ f4 |
+    o2 f16~ a16~ > c16~ e16~ f16~ a16~ > c16~ e16~ f16~ a16~ > c16~ e16~ f4~|
+    o5 {c16 d16 c16}8 < b8 a8 b8 a8 g16 f16~16 g16 f16 e16 | 
+    o5 {c16~ d16~ c16~}8 < b8 a8 > e8 e8 d16 c16~16 c_16 c8 |
+    o5 [{c16~ d16~ c16~}8]*6 {<b16~ >c16~ <b16~}8 {a16~ b16~ a16~}8 |
+    o4 g4. f8~4 {g8~ a8~ b8~}4 |
+    o5 c4~ {c8~ <g8~/<g8~ >g8~/<g8~}4 > {g8~/<g8~ >a8~/<a8~ >a8~/<a8~}4 > {a8~/<a8~ >b8~/<b8~ >b8~/<b8~}4 | # c4 should be tied into the first triplet
+    o5 c4~/<c4~ > {c8~/<c8~ g8~/<g8~ >g8~/<g8~}4 > {g8~/<g8~ >a8~/<a8~ >a8~/<a8~}4 > {a8~/<a8~ > > e8~/<e8~ >d8~/<d8~}4 | # c4 should be tied into the first triplet
+    o5 c4~/<c4~ > {c8~/<c8~ g8~/<g8~ >g8~/<g8~}4 > {g8~/<g8~ >a8~/<a8~ >a8~/<a8~}4 > {a8~/<a8~ >b8~/<b8~ >b8~/<b8~}4 |
+    o5 c2~8~/<c2~8~ > c_8~/<c_8~ > c4/<c4 |
+    

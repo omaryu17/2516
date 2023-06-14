@@ -1,1 +1,1 @@
-a very strange take on 2516 by Luna Li using Alda
+a very strange take on 2516 by Luna Li using the Alda musical programming language
