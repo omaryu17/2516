@@ -1,0 +1,45 @@
+(key-sig! '(a major))
+(tempo! 89)
+
+# midi-percussion:
+#     o2 r e4 e4 e4
+#     o2 {e e e}4
+    
+#     o2 e16*16 # this is too fast, probably triplets
+
+
+violin:
+    (volume 30)
+    o4 d1~/f1~/a1~/>d1~ | 
+    o4 c1~/f1~/a-1~/>c1~ | 
+    o4 c1~/e1~/a1~/>c1~ | 
+    o4 c1~/e1~/a1~/>c1~ | 
+
+    (volume 25)
+    [o4 d1~/f1~/a1~/>d1~ | 
+    o4 c1~/f1~/a-1~/>c1~ |
+    o4 c1~/e1~/a1~/>c1~ |
+    o4 c1~/e1~/a1~/>c1~ |]
+
+
+harp:
+    (volume 100)
+    o4 d a > d a |
+    o4 c a- > c a- | 
+    o4 c a- > c a- |
+    %solo o4 c a- > c a- |
+    (volume 50)
+    [o4 d a >d a | 
+    o4 c a- > c a- |
+    o4 c a- > c a- |
+    o4 c a- > c a- |]
+
+
+midi-electric-guitar-jazz:
+    @solo 
+    (volume 100)
+    o5 r2 r4 r16 c16 d16 e16 |
+    o5 c4~16 c16~ d16~ e16~ c8 < b8 > r16 c16~ d16~ e16~ |
+    o5 c8 c16 c16~16 c16 d16~ e16 c8 < b8 > c16 < b16 a16 b16 |
+    o4 a4 f4 c8 < a8 e4 |
+    o2 f16~ a16~ > c16~ e16~ f16~ a16~ > c16~ e16~ f16~ a16~ > c16~ e16~ f4 |
